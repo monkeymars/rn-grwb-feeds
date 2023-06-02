@@ -28,7 +28,7 @@ const FeedsComponent = () => {
                   </Text>
                 ) : null}
               </View>
-              <Text style={styles.flex}>
+              <Text style={[styles.flex, styles.mt20]}>
                 <Text style={styles.textValue}>{stat.value}</Text>
               </Text>
             </View>
@@ -44,15 +44,13 @@ export const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#111827',
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-    backgroundColor: '#ffeb3b',
+    marginVertical: 30,
   },
-  bgGray900: {
-    backgroundColor: '#111827',
+  mt20: {
+    marginTop: 20,
   },
   flex: {
     display: 'flex',
@@ -64,7 +62,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   textStat: {
-    color: '#9CA3AF',
+    color: '#FFFFFF',
     fontSize: 14,
     lineHeight: 16,
     fontWeight: '700',
@@ -72,18 +70,17 @@ export const styles = StyleSheet.create({
   textValue: {
     color: '#ffffff',
     fontSize: 32,
-    lineHeight: 24,
     fontWeight: '600',
   },
   textChange: {
+    marginTop: -3,
     fontSize: 16,
-    lineHeight: 24,
   },
   textPositive: {
     color: 'red',
   },
   textNegative: {
-    color: 'blue',
+    color: 'green',
   },
 });
 
